@@ -1,23 +1,34 @@
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 const Home = () => {
   return (
-    <div
-      className="hero min-h-screen"
-      style={{
-        backgroundImage:
-          "url(https://i.ibb.co/y4Gm9TQ/Real.jpg)",
-      }}
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
     >
-      <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold text-cyan-100">Hello there</h1>
-          <p className="mb-5 text-yellow-300">
-          Unlike general real estate websites, we focus exclusively on [specific niche, e.g., single-family homes, student housing, senior living, etc.]. This specialization allows us to provide more targeted and detailed information for our users.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
-        </div>
-      </div>
-    </div>
+      <SwiperSlide>
+        <img src="https://i.ibb.co/y4Gm9TQ/Real.jpg" alt="" style={{width: '100%', height: '100vh'}}/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="https://i.ibb.co/k5v9kMg/pexels-davidmcbee-1546168.jpg" alt="" style={{width: '100%', height: '100vh'}}/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="https://i.ibb.co/wyf70W4/real-estate.webp" alt="" style={{width: '100%', height: '100vh'}}/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="https://i.ibb.co/w6MQ89G/istockphoto-1483319549-170667a.webp" alt="" style={{width: '100%', height: '100vh'}}/>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
