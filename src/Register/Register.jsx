@@ -6,6 +6,7 @@ import {
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { auth } from "../firebase/firebase.config";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [error, setError] = useState("");
@@ -110,6 +111,7 @@ const Register = () => {
                 Register
               </button>
             </div>
+            <p>Already have an Account. please, <Link to='/login' className="text-pink-500">Login</Link></p>
           </form>
           {registerError && <p className="text-red-500">{registerError}</p>}
         </div>
