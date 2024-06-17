@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxury Apartment in Downtown",
+      "segment_name": "Residential",
+      "description": "A beautiful luxury apartment located in the heart of the city with stunning views and modern amenities.",
+      "price": "$1,500,000",
+      "status": "sale",
+      "area": "2000 sq ft",
+      "location": "Downtown, City Center",
+      "facilities": ["living room", "swimming pool", "Kitchen"],
+      "image": "https://i.ibb.co/4MK1Mhz/lake-house-orlando-fl-building-photo.jpg",
+      "button_text": "View Property"
+    },
+    {
+      "id": 2,
+      "estate_title": "Cozy Suburban House",
+      "segment_name": "Residential",
+      "description": "A cozy house located in a quiet suburban neighborhood, perfect for families.",
+      "price": "$750,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Suburban Area, City Outskirts",
+      "facilities": ["living room", "swimming pool", "Kitchen"],
+      "image": "https://i.ibb.co/6YHH7Fn/2.jpg",
+      "button_text": "View Property"
+    },
+    {
+      "id": 3,
+      "estate_title": "Modern Condo with City View",
+      "segment_name": "Residential",
+      "description": "A modern condo with an amazing view of the city skyline, featuring state-of-the-art amenities.",
+      "price": "$3,000/month",
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "Uptown, City Center",
+      "facilities": ["living room", "swimming pool", "Kitchen"],
+      "image": "https://i.ibb.co/YWXwy58/3.jpg",
+      "button_text": "View Property"
+    },
+    {
+      "id": 4,
+      "estate_title": "Beachfront Villa",
+      "segment_name": "Residential",
+      "description": "A stunning villa located right on the beach, offering luxurious living with spectacular ocean views.",
+      "price": "$2,500,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Beachside, Coastal Area",
+      "facilities": ["living room", "swimming pool", "Kitchen"],
+      "image": "https://i.ibb.co/Jrkb7qX/4.jpg",
+      "button_text": "View Property"
+    }
+]  
