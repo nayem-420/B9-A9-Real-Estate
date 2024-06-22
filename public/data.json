@@ -1,54 +1,55 @@
 [
-    {
-      "id": 1,
-      "estate_title": "Luxury Apartment in Downtown",
-      "segment_name": "Residential",
-      "description": "A beautiful luxury apartment located in the heart of the city with stunning views and modern amenities.",
-      "price": "$1,500,000",
-      "status": "sale",
-      "area": "2000 sq ft",
-      "location": "Downtown, City Center",
-      "facilities": ["living room", "swimming pool", "Kitchen"],
-      "image": "https://i.ibb.co/4MK1Mhz/lake-house-orlando-fl-building-photo.jpg",
-      "button_text": "View Property"
-    },
-    {
-      "id": 2,
-      "estate_title": "Cozy Suburban House",
-      "segment_name": "Residential",
-      "description": "A cozy house located in a quiet suburban neighborhood, perfect for families.",
-      "price": "$750,000",
-      "status": "sale",
-      "area": "1800 sq ft",
-      "location": "Suburban Area, City Outskirts",
-      "facilities": ["living room", "swimming pool", "Kitchen"],
-      "image": "https://i.ibb.co/6YHH7Fn/2.jpg",
-      "button_text": "View Property"
-    },
-    {
-      "id": 3,
-      "estate_title": "Modern Condo with City View",
-      "segment_name": "Residential",
-      "description": "A modern condo with an amazing view of the city skyline, featuring state-of-the-art amenities.",
-      "price": "$3,000/month",
-      "status": "rent",
-      "area": "1500 sq ft",
-      "location": "Uptown, City Center",
-      "facilities": ["living room", "swimming pool", "Kitchen"],
-      "image": "https://i.ibb.co/YWXwy58/3.jpg",
-      "button_text": "View Property"
-    },
-    {
-      "id": 4,
-      "estate_title": "Beachfront Villa",
-      "segment_name": "Residential",
-      "description": "A stunning villa located right on the beach, offering luxurious living with spectacular ocean views.",
-      "price": "$2,500,000",
-      "status": "sale",
-      "area": "3000 sq ft",
-      "location": "Beachside, Coastal Area",
-      "facilities": ["living room", "swimming pool", "Kitchen"],
-      "image": "https://i.ibb.co/Jrkb7qX/4.jpg",
-      "button_text": "View Property"
-    }
-]  
+  {
+    "id": 1,
+    "estate_title": "Luxury Villa",
+    "segment_name": "Residential",
+    "description": "This luxury villa is a perfect blend of modern architecture and sophisticated design. Spanning over 2000 sq ft, this estate offers a spacious living room, a state-of-the-art kitchen, and a swimming pool that promises relaxation. Located in the prestigious Beverly Hills, CA, it offers an idyllic retreat from the hustle and bustle of city life. The villa is adorned with high-end finishes, large windows that allow plenty of natural light, and an open floor plan that creates a seamless flow between indoor and outdoor spaces. It is an ideal residence for those who appreciate luxury, privacy, and comfort. The neighborhood is quiet, with beautiful tree-lined streets and easy access to the best schools, shopping, and dining in the area. This villa is available for sale at a price of $500,000. It offers all the facilities you would expect in a modern home, making it a great investment for the future.",
+    "price": "$500,000",
+    "status": "sale",
+    "area": "2000 sq ft",
+    "location": "Beverly Hills, CA",
+    "facilities": ["Living room", "Swimming pool", "Kitchen"],
+    "image": "https://i.ibb.co/4MK1Mhz/lake-house-orlando-fl-building-photo.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "id": 2,
+    "estate_title": "City Apartment",
+    "segment_name": "Residential",
+    "description": "Nestled in the heart of New York City, this cozy apartment offers an urban oasis for those looking to live in the center of it all. The 1000 sq ft apartment is thoughtfully designed with a modern aesthetic, featuring a spacious living room, a fully equipped kitchen, and large windows that provide stunning city views. The apartment's prime location offers unparalleled access to the city's best amenities, including world-class dining, shopping, and entertainment options. Residents will enjoy the convenience of being within walking distance to major subway lines, making commuting a breeze. Despite its central location, the apartment provides a quiet retreat from the city noise, ensuring a peaceful living environment. This apartment is available for rent at $300,000. It comes with essential facilities such as a living room and kitchen, and is an excellent choice for those looking to experience the vibrant city life of New York.",
+    "price": "$300,000",
+    "status": "rent",
+    "area": "1000 sq ft",
+    "location": "New York, NY",
+    "facilities": ["Living room", "Kitchen"],
+    "image": "https://i.ibb.co/6YHH7Fn/2.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "id": 3,
+    "estate_title": "Suburban House",
+    "segment_name": "Residential",
+    "description": "This charming suburban house offers the perfect combination of comfort and convenience. Located in a family-friendly neighborhood in Austin, TX, the house spans 1800 sq ft and features three bedrooms, two bathrooms, a spacious living room, and a modern kitchen. The large backyard is perfect for outdoor activities and gatherings. The house is located near top-rated schools, parks, and shopping centers, making it an ideal home for families. The interiors are beautifully designed with contemporary finishes and plenty of natural light. The house is available for sale at $400,000. It provides a serene living environment while being close to all necessary amenities. Facilities include a living room, a well-equipped kitchen, and ample outdoor space. This suburban house is a great investment for those looking for a peaceful yet conveniently located home.",
+    "price": "$400,000",
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": "Austin, TX",
+    "facilities": ["Living room", "Kitchen", "Backyard"],
+    "image": "https://i.ibb.co/YWXwy58/3.jpg",
+
+    "button_text": "View Property"
+  },
+  {
+    "id": 4,
+    "estate_title": "Beachside Cottage",
+    "segment_name": "Residential",
+    "description": "Experience the ultimate in beachside living with this charming cottage located in Malibu, CA. The 1500 sq ft cottage features two bedrooms, two bathrooms, a cozy living room, and a kitchen with all the modern amenities. The highlight of this property is its proximity to the beach, offering stunning ocean views and easy access to the sand and surf. The cottage is designed with a relaxed, coastal aesthetic, featuring large windows that let in the sea breeze and natural light. It also includes a spacious deck, perfect for enjoying the sunset. The cottage is available for rent at $350,000 and offers facilities such as a living room, kitchen, and outdoor deck. It is an ideal choice for those looking to escape the city and enjoy the tranquil beachside lifestyle. The location also offers convenient access to local shops, restaurants, and recreational activities, making it a perfect getaway home.",
+    "price": "$350,000",
+    "status": "rent",
+    "area": "1500 sq ft",
+    "location": "Malibu, CA",
+    "facilities": ["Living room", "Kitchen", "Deck"],
+    "image": "https://i.ibb.co/Jrkb7qX/4.jpg",
+    "button_text": "View Property"
+  }
+]

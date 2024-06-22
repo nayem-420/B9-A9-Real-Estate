@@ -16,6 +16,7 @@ const Login = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+    console.log(email, password);
 
     if (password.length < 6) {
       toast.error("Password must be at least 6 characters long");

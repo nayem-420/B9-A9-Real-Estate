@@ -1,14 +1,40 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import { CgProfile } from "react-icons/cg";
 
 const NavBar = () => {
+  const { user, logoutUser } = useContext(AuthContext);
 
-    const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink>Buy</NavLink></li>
-        <li><NavLink>Sell</NavLink></li>
-        <li><NavLink to='/login'>Login</NavLink></li>
-        <li><NavLink to='/register'>Register</NavLink></li>
+  const handleLogout = () => {
+    logoutUser()
+      .then((result) => {
+        console.log("LogOut Successfully", result);
+      })
+      .catch((error) => {
+        console.error("Error signing out:", error);
+      });
+  };
+
+  const navLinks = (
+    <>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink>Buy</NavLink>
+      </li>
+      <li>
+        <NavLink to="/">Estate</NavLink>
+      </li>
+      <li>
+        <NavLink to="/login">Login</NavLink>
+      </li>
+      <li>
+        <NavLink to="/register">Register</NavLink>
+      </li>
     </>
+  );
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -39,12 +65,23 @@ const NavBar = () => {
         <a className="btn btn-ghost text-xl">RealTour</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {navLinks}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-2">
+        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+          <div className="w-10 rounded-full">
+            <img src={<CgProfile />} alt="pic" />
+          </div>
+        </label>
+        {user ? (
+          <button className="btn" onClick={handleLogout}>
+            Sign Out
+          </button>
+        ) : (
+          <Link to="/login">
+            <button className="btn">Login</button>
+          </Link>
+        )}
       </div>
     </div>
   );

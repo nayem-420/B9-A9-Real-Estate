@@ -7,6 +7,8 @@ import Home from "./Home/Home";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import AuthProvider from "./AuthProvider/AuthProvider";
+import Estate from "./PrivateRoute/PrivateRoute";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch('/data.json')
+      },
+      {
+        path: '/estate/:id',
+        element: <PrivateRoute><Estate /></PrivateRoute>
       },
       {
         path: "/login",

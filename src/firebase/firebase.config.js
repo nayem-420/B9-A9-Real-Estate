@@ -3,18 +3,21 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
+
+console.log(import.meta.env.VITE_PASS);
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDdVDyNNkjk4E9vlnO9_bO77sErhL0rfus",
-  authDomain: "b9-a9-real-estate-19fb4.firebaseapp.com",
-  projectId: "b9-a9-real-estate-19fb4",
-  storageBucket: "b9-a9-real-estate-19fb4.appspot.com",
-  messagingSenderId: "267214987110",
-  appId: "1:267214987110:web:2b2fc846f2abc039a532a7"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-// Initialize Firebase Authentication and export it
-const auth = getAuth(app);
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  
+  // Initialize Firebase Authentication and export it
+  const auth = getAuth(app);
 export { auth };
