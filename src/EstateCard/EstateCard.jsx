@@ -1,12 +1,28 @@
+import Aos from 'aos';
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import 'aos/dist/aos.css';
 
 const EstateCard = ({ estate }) => {
     const { id, estate_title, segment_name, description, price, status, area, location, facilities, image, button_text } = estate;
 
+    useEffect( () => {
+      Aos.init();
+    }, [])
+
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-100 shadow-xl" 
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <figure>
         <img
           src={image}

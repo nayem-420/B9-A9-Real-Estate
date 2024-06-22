@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useLoaderData } from "react-router-dom";
 import EstateCard from "../EstateCard/EstateCard";
+import 'animate.css';
 
 const Home = () => {
   const estate = useLoaderData();
@@ -51,6 +52,7 @@ const Home = () => {
         </SwiperSlide>
       </Swiper>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 mt-20">
+        <h1 className="text-3xl text-center animate__animated animate__backInUp">View Our Property</h1>
         {
             estate.map(aEstate => <EstateCard
                 key={aEstate.id}

@@ -9,6 +9,7 @@ import Register from "./Register/Register";
 import AuthProvider from "./AuthProvider/AuthProvider";
 import Estate from "./PrivateRoute/PrivateRoute";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import ErrorPage from "./ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: () => fetch('/data.json')
+      },
+      {
+        path: '/buy',
+        element: <ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage/>
       },
       {
         path: '/estate/:id',
